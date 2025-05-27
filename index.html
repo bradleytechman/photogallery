@@ -9,23 +9,27 @@
 <body>
     <header>
         <h1>Bradley's photos</h1>
-        <p>Taken with a Sony a6100, Tamron 17-70 f/2.8, or Nikon 70-300 f/4.5. </p>
+        <p>Taken with a Sony a6100, Tamron 17-70 f/2.8, or Nikon 70-300 f/4.5.</p>
     </header>
     <div class="gallery">
-        <img src="photos/DSC01069 copy.jpg" alt="Photo 1" onclick="openLightbox(this)">
-        <img src="photos/DSC00862 copy.jpg" alt="Photo 2" onclick="openLightbox(this)">
-        <img src="photos/DSC00864 copy.jpg" alt="Photo 3" onclick="openLightbox(this)">
-        <img src="photos/DSC00872 copy.jpg" alt="Photo 4" onclick="openLightbox(this)">
-        <img src="photos/DSC00874 copy.jpg" alt="Photo 5" onclick="openLightbox(this)">
-        <img src="photos/DSC00914 copy.jpg" alt="Photo 6" onclick="openLightbox(this)">
-        <img src="photos/DSC00945 copy.jpg" alt="Photo 7" onclick="openLightbox(this)">
-        <img src="photos/DSC00979 copy.jpg" alt="Photo 8" onclick="openLightbox(this)">
-        <img src="photos/DSC01046 copy.jpg" alt="Photo 9" onclick="openLightbox(this)">
-        <img src="photos/DSC01068 copy.jpg" alt="Photo 10" onclick="openLightbox(this)">
+        <img src="photos/DSC01069 copy.jpg" alt="Photo 1" data-title="Sunset Glow" data-location="Paris, France" onclick="openLightbox(this)">
+        <img src="photos/DSC00862 copy.jpg" alt="Photo 2" data-title="Mountain Vista" data-location="Alps, Switzerland" onclick="openLightbox(this)">
+        <img src="photos/DSC00864 copy.jpg" alt="Photo 3" data-title="City Lights" data-location="Tokyo, Japan" onclick="openLightbox(this)">
+        <img src="photos/DSC00872 copy.jpg" alt="Photo 4" data-title="Ocean Breeze" data-location="Maui, Hawaii" onclick="openLightbox(this)">
+        <img src="photos/DSC00874 copy.jpg" alt="Photo 5" data-title="Forest Path" data-location="Black Forest, Germany" onclick="openLightbox(this)">
+        <img src="photos/DSC00914 copy.jpg" alt="Photo 6" data-title="Desert Dunes" data-location="Sahara, Morocco" onclick="openLightbox(this)">
+        <img src="photos/DSC00945 copy.jpg" alt="Photo 7" data-title="Autumn Leaves" data-location="Vermont, USA" onclick="openLightbox(this)">
+        <img src="photos/DSC00979 copy.jpg" alt="Photo 8" data-title="Urban Jungle" data-location="New York, USA" onclick="openLightbox(this)">
+        <img src="photos/DSC01046 copy.jpg" alt="Photo 9" data-title="Coastal Cliffs" data-location="Cliffs of Moher, Ireland" onclick="openLightbox(this)">
+        <img src="photos/DSC01068 copy.jpg" alt="Photo 10" data-title="Starlit Sky" data-location="Atacama Desert, Chile" onclick="openLightbox(this)">
     </div>
     <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">×</span>
-        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <div class="lightbox-content">
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-location"></p>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
