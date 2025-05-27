@@ -50,12 +50,19 @@ header {
 
 .lightbox-content {
     text-align: center;
+    max-height: 95vh; /* Increased to allow more image space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lightbox img {
-    max-width: 90%;
-    max-height: 70%;
-    object-fit: contain;
+    max-width: 95vw; /* Limits width to viewport */
+    max-height: calc(100vh - 80px); /* Leaves space for title/location */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensures full image visibility */
     border-radius: 5px;
 }
 
@@ -68,7 +75,7 @@ header {
 .lightbox p {
     color: white;
     font-size: 16px;
-    margin: 0;
+    margin: 0 0 10px;
 }
 
 .close {
