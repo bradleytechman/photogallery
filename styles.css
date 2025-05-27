@@ -14,19 +14,22 @@ header {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reduced min width for smaller images */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px; /* Increased gap for better spacing */
     padding: 20px;
 }
 
 .gallery img {
     width: 100%;
-    max-width: 200px; /* Limits image width */
-    max-height: 200px; /* Limits image height */
-    object-fit: cover; /* Ensures images fit nicely without distortion */
-    border-radius: 5px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain; /* Changed to contain to show full image */
+    border-radius: 8px; /* Slightly larger radius for rounded corners */
     cursor: pointer;
     transition: transform 0.3s;
+    background-color: #fff; /* White background to frame images cleanly */
+    padding: 5px; /* Padding to enhance appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .gallery img:hover {
@@ -45,10 +48,27 @@ header {
     align-items: center;
 }
 
+.lightbox-content {
+    text-align: center;
+}
+
 .lightbox img {
-    max-width: 80%; /* Slightly smaller in lightbox for better fit */
-    max-height: 80%;
+    max-width: 90%; /* Ensures image fits screen */
+    max-height: 70%; /* Leaves space for title and location */
+    object-fit: contain; /* Ensures full image is visible */
     border-radius: 5px;
+}
+
+.lightbox h2 {
+    color: white;
+    margin: 10px 0 5px;
+    font-size: 24px;
+}
+
+.lightbox p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
 }
 
 .close {
