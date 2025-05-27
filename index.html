@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Photography</h1>
+        <p>Welcome to my photo gallery!</p>
+    </header>
+    <div class="gallery">
+        <img src="photos/DSC01069 copy.jpg" alt="Photo 1" onclick="openLightbox(this)">
+        <img src="photos/DSC00862 copy.jpg" alt="Photo 2" onclick="openLightbox(this)">
+        <img src="photos/DSC00864 copy.jpg" alt="Photo 3" onclick="openLightbox(this)">
+        <img src="photos/DSC00872 copy.jpg" alt="Photo 4" onclick="openLightbox(this)">
+        <img src="photos/DSC00874 copy.jpg" alt="Photo 5" onclick="openLightbox(this)">
+        <img src="photos/DSC00914 copy.jpg" alt="Photo 6" onclick="openLightbox(this)">
+        <img src="photos/DSC00945 copy.jpg" alt="Photo 7" onclick="openLightbox(this)">
+        <img src="photos/DSC00979 copy.jpg" alt="Photo 8" onclick="openLightbox(this)">
+        <img src="photos/DSC01046 copy.jpg" alt="Photo 9" onclick="openLightbox(this)">
+        <img src="photos/DSC01068 copy.jpg" alt="Photo 10" onclick="openLightbox(this)">
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
