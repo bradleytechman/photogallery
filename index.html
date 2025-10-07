@@ -3,31 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Photo Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bradley's photos</h1>
-        <p>Taken with a Sony a6100, Tamron 17-70 f/2.8, or Nikon 70-300 f/4.5.</p>
-    </header>
     <div class="gallery">
-        <img src="photos/DSC01069 copy.jpg" alt="Photo 1" data-title="Sunset Glow" data-location="New York, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00862 copy.jpg" alt="Photo 2" data-title="Bird Chirp" data-location="Central Park, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00864 copy.jpg" alt="Photo 3" data-title="Central Views" data-location="Central Park, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00872 copy.jpg" alt="Photo 4" data-title="Ventura Colors" data-location="Central Park, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00874 copy.jpg" alt="Photo 5" data-title="Pink Fairy" data-location="Central Park, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00914 copy.jpg" alt="Photo 6" data-title="Statue of Liberty" data-location="Manhattan, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00945 copy.jpg" alt="Photo 7" data-title="Merica" data-location="Manhattan, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC00979 copy.jpg" alt="Photo 8" data-title="Liberty" data-location="Manhattan, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC01046 copy.jpg" alt="Photo 9" data-title="Streetway" data-location="New York, New York" onclick="openLightbox(this)">
-        <img src="photos/DSC01068 copy.jpg" alt="Photo 10" data-title="Sun with a crane" data-location="New York, New York" onclick="openLightbox(this)">
-    <!-- Yes I know it's all New York, i'll put some more up later not from here ig-->
+        <img src="photos/DSC01069 copy.jpg" alt="Photo 1" data-location="New York, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00862 copy.jpg" alt="Photo 2" data-location="Central Park, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00864 copy.jpg" alt="Photo 3" data-location="Central Park, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00872 copy.jpg" alt="Photo 4" data-location="Central Park, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00874 copy.jpg" alt="Photo 5" data-location="Central Park, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00914 copy.jpg" alt="Photo 6" data-location="Manhattan, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00945 copy.jpg" alt="Photo 7" data-location="Manhattan, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC00979 copy.jpg" alt="Photo 8" data-location="Manhattan, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC01046 copy.jpg" alt="Photo 9" data-location="New York, New York" onclick="openLightbox(this)">
+        <img src="photos/DSC01068 copy.jpg" alt="Photo 10" data-location="New York, New York" onclick="openLightbox(this)">
+        <!-- Yes I know it's all New York, I'll put some more up later not from here ig -->
     </div>
     <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">×</span>
         <div class="lightbox-content">
-            <h2 id="lightbox-title"></h2>
             <p id="lightbox-location"></p>
             <img id="lightbox-img" src="" alt="Lightbox Image">
         </div>
